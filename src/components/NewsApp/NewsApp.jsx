@@ -26,8 +26,8 @@ export default class NewsApp extends React.Component {
             <td>
             <input
               id="news-title"
-              maxLength="11"
-              style={{'margin-left':'0px', 'height':'36px', 'width':'250px'}}
+              maxLength="32"
+              style={{'margin-left':'20px', 'height':'36px', 'width':'250px'}}
               onChange={this.handleTitleChange}
               value={this.state.textTitle}
             />
@@ -40,12 +40,11 @@ export default class NewsApp extends React.Component {
             </label>
             </td>
             <td>
-            <input
+            <textarea
               id="news-description"
               maxLength="200"
-              word-wrap="break-word"
-              style={{'margin-left':'0px', 'height':'100px', 'width':'250px',
-                      'word-wrap': 'break-word', 'word-break': 'break-all'}}
+              rows="6" cols="33"
+              style={{'margin-left':'20px', 'margin-top':'6px'}}
               onChange={this.handleDescriptionChange}
               value={this.state.textDescription}
             />
@@ -60,21 +59,19 @@ export default class NewsApp extends React.Component {
             <td>
             <input
               id="news-category"
-              maxLength="11"
-              style={{'margin-left':'0px', 'height':'36px', 'width':'250px'}}
+              maxLength="32"
+              style={{'margin-left':'20px', 'height':'36px', 'width':'250px'}}
               onChange={this.handleCategoryChange}
               value={this.state.textCategory}
             />
             </td>
             </tr>
-            <tr>
+            </table>
             <button class="btn btn-success" 
-              style={{'margin-left':'320px', 'width':'100px', 
+              style={{'margin-left':'350px', 'width':'100px', 
                     'column-span':'2', 'margin-top':'10px'}}>
               Add News{/*#{this.state.items.length + 1}*/}
             </button>
-            </tr>
-            </table>
           </form>
           <NewsList items={this.state.items} />
         </div>
