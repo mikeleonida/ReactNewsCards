@@ -7,7 +7,8 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Main from './components/Main/Main';
 import CardApp from './components/CardApp/CardApp';
-import NewsApp from './components/NewsApp/NewsApp'
+import NewsApp from './components/NewsApp/NewsApp';
+import Users from './components/Users/Users';
 
 ReactDOM.render(
   <React.StrictMode>
